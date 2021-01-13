@@ -1,4 +1,5 @@
 import random
+import time
 game_list = ['Rock', 'Paper' , 'Scissors']
 computer = c = 0
 command = p = 0
@@ -44,6 +45,8 @@ while run:
             print("Computer: " + computer_choice)
             c += 1
     elif command == 'Quit':
+        print("Score: Computer " + str(c) + " Player " + str(p))
+        time.sleep(3)
         break
     else:
         print("Wrong command!")
